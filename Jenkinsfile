@@ -20,7 +20,7 @@ pipeline
     stage('build'){
       steps{
         script{
-          dockerimg=docker.build("${image_name}:latest")
+          dockerimg=docker.build("${image_name}:1.0")
         }
       }
     }
