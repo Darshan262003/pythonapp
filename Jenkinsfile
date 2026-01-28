@@ -29,7 +29,7 @@ pipeline
       steps{
         script{
           docker.withRegsitry("https://index.docker.io/v1/","dockerid"){
-            dockerimg.push()
+            dockerimg.push("1.0")
           }
           
         }
