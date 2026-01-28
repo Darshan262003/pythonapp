@@ -4,7 +4,7 @@ pipeline
   environment
   {
     image_name="darshu262003/newapp"
-    doc_credentials=credentials('dockerid')
+    
   }
   stages
   {
@@ -12,7 +12,8 @@ pipeline
     {
       steps{
         git url:"https://github.com/Darshan262003/pythonapp.git",
-        branch:"main"
+        branch:"main",
+        credentialsId:"dockerid"
        
       }
       
@@ -27,7 +28,7 @@ pipeline
     stage('push'){
       steps{
         script{
-          docker.withRegsitry("https://index.docker.io/v1","dockerid"){
+          docker.withRegsitry("https://index.docker.io/v1/","dockerid"){
             dockerimg.push()
           }
           
