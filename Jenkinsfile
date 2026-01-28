@@ -3,7 +3,7 @@ pipeline
   agent any
   environment
   {
-    image_name=darshu262003/testrepo
+    image_name="darshu262003/newapp"
     doc_credentials=credentials('dockerid')
   }
   stages
