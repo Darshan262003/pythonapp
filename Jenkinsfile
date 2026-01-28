@@ -12,8 +12,8 @@ pipeline
     {
       steps{
         git url:"https://github.com/Darshan262003/pythonapp.git",
-        branch:"main"
-        credentialsId: "dockerid"
+        branch:"main",
+        credentialsId:"dockerid"
       }
       
     }
