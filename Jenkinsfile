@@ -1,6 +1,6 @@
 pipeline
 {
-  agents any
+  agent any
   environment
   {
     image_name=darshu262003/testrepo
@@ -13,6 +13,7 @@ pipeline
       steps{
         git url:"https://github.com/Darshan262003/pythonapp.git",
         branch:"main"
+        credentialsId: "dockerid"
       }
       
     }
