@@ -4,7 +4,7 @@ pipeline
   environment
   {
     image_name="darshu262003/newapp"
-    
+    credentials_doc=credentials('dockerid')
   }
   stages
   {
