@@ -12,7 +12,7 @@ pipeline
     {
       steps{
         git url:"https://github.com/Darshan262003/pythonapp.git",
-        branch:"main",
+        branch:"main"
        
       }
       
